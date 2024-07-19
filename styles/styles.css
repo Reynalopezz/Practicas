@@ -85,7 +85,7 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-  color: #CE9978;
+  color: #ce967b;
 }
 
 #Menu {
@@ -103,4 +103,68 @@ body {
 
 .btn-1:hover {
   background-color: #ebad8d;
+}
+
+.header-content{
+  text-align: center;
+}
+
+.header-content h1{
+  font-size: 75px;
+  line-height: 80px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.coffee {
+  padding: 100px 0;
+  background-color: #f9fafc;
+  position: relative;
+}
+
+.coffee-content {
+  text-align: center;
+}
+
+.coffee-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-bottom: 15px;
+}
+
+.txt-p {
+  font-size: 16px;
+  color: #38393d;
+  padding: 0 250px;
+  margin-bottom: 35px;
+}
+
+.coffee-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.coffee-1 {
+  padding: 0 25px;
+}
+.coffee-1 img {
+  width: 200px;
+}
+
+.coffee-img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
