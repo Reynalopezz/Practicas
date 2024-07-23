@@ -18,8 +18,9 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(rgba(2, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
         url(../images/bg.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -74,22 +75,6 @@ body {
     display: none;
 }
 
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #ce967b;
-    color: #f9fafc;
-    text-transform: uppercase;
-}
 
 .header-content {
     text-align: center;
@@ -110,15 +95,35 @@ body {
     margin-bottom: 25px;
 }
 
-.btn-1{
+.btn-1 {
     display: inline-block;
     padding: 11px 35px;
     background-color: #ce967b;
     color: #f9fafc;
     text-transform: uppercase;
 }
+
 .btn-1:hover {
     background-color: #ebad8d;
+}
+
+.coffee {
+    padding: 100px 0;
+    background-color: #f9fafc;
+    position: relative;
+}
+  
+  .coffee-content {
+    text-align: center;
+}
+  
+  .coffee-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
 }
 
 .txt-p{
@@ -128,57 +133,32 @@ body {
     margin-bottom: 35px;
 }
 
-.coffee {
-  padding: 100px 0;
-  background-color: #f9fafc;
-  position: relative;
-}
-
-.coffee-content {
-  text-align: center;
-}
-
-.coffee-content h2 {
-  font-size: 55px;
-  line-height: 70px;
-  color: #323337;
-  text-transform: uppercase;
-  padding: 0 250px;
-  margin-bottom: 15px;
-}
-
-.txt-p {
-  font-size: 16px;
-  color: #414247;
-  padding: 0 250px;
-  margin-bottom: 35px;
-}
 
 .coffee-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
-
+  
 .coffee-1 {
-  padding: 0 25px;
+    padding: 0 25px;
 }
+
 .coffee-1 img {
-  width: 200px;
+    width: 200px;
 }
-
+  
 .coffee-img {
-  position: absolute;
-  top: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-
+  
 .coffee-1 h3 {
-  color: #323337;
-  font-size: 20px;
-  margin-bottom: 15px;
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
-
 
 .services{
     background-image: linear-gradient(
@@ -232,7 +212,7 @@ body {
     font-size: 18px;
 }
 
-.general-1{
+.general{
     display: flex;
 }
 
@@ -257,7 +237,7 @@ body {
     background-size: cover;
     width: 50%;
 }
-
+/* 
 h2{
     font-size: 55px;
     line-height: 70px;
@@ -270,4 +250,137 @@ p{
     font-size: 55px;
     color: #414247;
     margin: 25px 0 45px 0;
+}  */
+
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1{
+    padding: 15px 55px;
+}
+
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    } 
+
+    .coffee{
+        padding: 30px;
+    }
+
+    .coffee-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+
+    .coffee-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .coffee-img{
+        display: none;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    .general{
+        flex-direction: column;
+    }
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .general-2, .general-3{
+        display: none;
+    }
+    .blog{
+        padding: 30px;
+    }
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 0;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
 }
